@@ -1,13 +1,6 @@
 package com.labsflix.api.account.vo;
 
-import java.io.Serializable;
-
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-
-@JsonIgnoreProperties(ignoreUnknown=true)
-public class Account implements Serializable {
-
-	private static final long serialVersionUID = -6280913991087995887L;
+public class Account {
 
 	private String username;
 	

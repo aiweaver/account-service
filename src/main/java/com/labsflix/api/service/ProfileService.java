@@ -18,8 +18,7 @@ public class ProfileService {
 	}
 
 	public List<Profile> getProfiles(String username) {
-		List<Profile> profiles = profileRepository.findByUsername(username);
-		return profiles;
+		return profileRepository.findByUsername(username);
 	}
 	
 }

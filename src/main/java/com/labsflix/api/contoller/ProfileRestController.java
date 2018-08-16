@@ -7,10 +7,7 @@ import com.labsflix.api.vo.Profile;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/v1")
@@ -25,12 +22,10 @@ public class ProfileRestController {
 		this.profileService = profileService;
 	}
 
-	@RequestMapping(path="/{username}/profiles", method=RequestMethod.GET, name="getProfiles")
+	@GetMapping("/{username}/profiles")
 	public List<Profile> getProfiles(@PathVariable(value = "username") String username) {
 		logger.debug("getProfiles() called!!");
-		
-		List<Profile> profiles = profileService.getProfiles(username); 
-		return profiles;
+		return profileService.getProfiles(username);
 	}
 
 }
