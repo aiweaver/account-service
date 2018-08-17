@@ -1,4 +1,4 @@
-package com.labsflix.api.account.vo;
+package com.labsflix.api.domain;
 
 public class Account {
 

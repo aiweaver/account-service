@@ -1,4 +1,4 @@
-package com.labsflix.api.vo;
+package com.labsflix.api.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -6,7 +6,7 @@ import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 
 @Entity
-@Table(name="profiles")
+@Table(name = "profiles")
 public class Profile {
 
 	@Id

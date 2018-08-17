@@ -1,9 +1,9 @@
-package com.labsflix.api.service;
+package com.labsflix.api.profile.service;
 
 import java.util.List;
 
-import com.labsflix.api.dao.ProfileRepository;
-import com.labsflix.api.vo.Profile;
+import com.labsflix.api.profile.repository.ProfileRepository;
+import com.labsflix.api.domain.Profile;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
